@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: rgb(255, 127, 165);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+header img{
+    height: auto;
+    width: 24rem;
+}
+
+header input{
+    width: 32rem;
+    height: 30px;
+    border-radius: 12px;
+    text-align: center;
+    background-color: rgb(230, 230, 230);
+}
+
+header button{
+    width: 6rem;
+    height: 30px;
+    border-radius: 12px;
+    background-color: #D72756;
+    color: white;
+}
+
+.search-container {
+    margin-top: 15px;
+}
+
+#searchInput, #searchButton {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#searchButton {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+/* Contêiner dos Cards */
+#movies-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar em várias linhas */
+    justify-content: center; /* Centraliza os cards */
+    gap: 20px; /* Espaço entre os cards */
+    padding: 20px;
+}
+
+/* Estilo do Card Individual */
+.movie-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px; /* Largura fixa do card */
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+}
+
+.movie-card img {
+    width: 100%;
+    height: 450px; /* Altura fixa para manter o layout uniforme */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer muito */
+}
+
+.movie-card .info {
+    padding: 15px;
+}
+
+.movie-card h2 {
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+.error, .warning {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+}

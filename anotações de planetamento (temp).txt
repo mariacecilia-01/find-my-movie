@@ -1,0 +1,18 @@
+tmdb - api + omdb
+Nome site: Find My Movie!
+
+3 páginas
+wireframe
+protótipo
+criar site
+readme.md
+GitHub pages
+
+- tem que ser responsivo
+
+Links Wireframe:
+Pagina 1 web: https://wireframe.cc/lnUTrT
+Página 2 web: https://wireframe.cc/nFpUV1
+Página 3 web: https://wireframe.cc/0rEasG
+
+Link Figma:https://www.figma.com/design/7HryZeKINffholGSWBmgrw/find-my-movie?node-id=0-1&p=f&t=efbgqjOfZ1a6IdI4-0
