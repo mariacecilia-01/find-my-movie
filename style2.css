@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+}
+
+header{
+    background-color: rgb(255, 127, 165);
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+header img{
+    height: auto;
+    width: 28rem;
+}
+
+#container{
+    display: grid;
+    margin: 3rem;
+    
+}
+
+.filme-detalhe{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+
+}
+
+.coluna-poster{
+    flex-direction: column;
+}
+
+#container img {
+    width: auto;
+    height: 600px;
+    padding-bottom: 20px;
+}
+
+.dados-filme{
+    font-size: 32px;
+}
+
+.coluna-info{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+#container h1{
+    font-size: 75px;
+    padding-bottom: 20px;
+}
+
+#container h2{
+    font-size: 38px;
+    font-weight: 400;
+    text-align: justify;
+    margin: 15px;
+    border-bottom: 3px solid #ff0077;
+    padding-bottom: 20px;
+}
+
+.informacoes-filme{
+    margin: 15px;
+    font-size: 32px;
+}
+
+.detalhes-footer {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin: 30px;
+    padding: 15px;
+}
+
+.nota-filme {
+    margin: 0; 
+    padding: 20px;
+    background-color: #dc0368;
+    border-radius: 12px;
+    font-size: 3em;
+    font-weight: bold;
+    color: #ffffff; 
+}
+
+.imdb-button{
+    background-color: #dc0368;
+    border-radius: 12px;
+    padding: 24px;
+    font-size: 2em;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+}
+
+.imdb-button:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsividade para tablet */
+@media screen and (max-width: 992px) {
+    #container {
+        margin: 2rem; 
+    }
+
+    header img{
+        width: 18rem;
+    }
+
+    #container h1{
+        font-size: 50px;
+    }
+    
+    #container h2, .dados-filme, .informacoes-filme{
+        font-size: 24px;
+    }
+
+    .filme-detalhe{
+        gap: 2rem;
+    }
+
+    #container img {
+        height: 450px;
+    }
+
+    .detalhes-footer {
+        gap: 25px;
+    }
+}
+
+/* Responsividade para celular */
+@media screen and (max-width: 600px) {
+
+    #container {
+        margin: 1rem;
+    }
+
+    .filme-detalhe{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    header {
+        justify-content: center;
+    }
+    header img{
+        width: 100%;
+        max-width: 250px;
+    }
+
+    #container img {
+        width: 100%;
+        height: auto;
+        max-height: 450px;
+    }
+
+    #container h1{
+        font-size: 36px;
+        padding-top: 10px;
+    }
+    
+    #container h2{
+        font-size: 22px;
+        margin: 5px 0;
+    }
+
+    .dados-filme, .informacoes-filme{
+        font-size: 16px;
+        margin: 5px;
+    }
+
+    .detalhes-footer {
+        flex-direction: column;
+        gap: 15px;
+        margin: 20px 0 10px 0;
+    }
+
+    .nota-filme {
+        font-size: 2em;
+        width: 100%;
+        text-align: center;
+    }
+
+    .imdb-button{
+        font-size: 1.2em;
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+    }
+}

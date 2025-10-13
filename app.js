@@ -33,6 +33,10 @@ function cardFilme(filmeData){
         buttonVerFilme.textContent = 'VER FILME'
         buttonVerFilme.classList.add('detail-button')
 
+        buttonVerFilme.addEventListener('click', () => {
+            window.location.href = `/index2.html?id=${filme.imdbID}`
+        });
+
         div.appendChild(image)
         div.appendChild(tituloFilme)
         div.appendChild(buttonVerFilme)
@@ -41,7 +45,7 @@ function cardFilme(filmeData){
     })
 
     } else {
-        MESSAGE_ERROR
+        return MESSAGE_ERROR
     }
     
     }
