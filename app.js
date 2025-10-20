@@ -34,7 +34,7 @@ function cardFilme(filmeData){
         buttonVerFilme.classList.add('detail-button')
 
         buttonVerFilme.addEventListener('click', () => {
-            window.location.href = `index2.html?id=${filme.imdbID}`
+            window.location.href = `https://mariacecilia-01.github.io/find-my-movie/index2.html?id=${filme.imdbID}`
         });
 
         div.appendChild(image)
