@@ -20,7 +20,7 @@ function cardFilme(filmeData){
         const tituloFilme = document.createElement('h2')
 
         const posterUrl = filme.Poster === 'N/A' 
-            ? 'https://corsproxy.io/?url=https://placehold.co/300x450/333333/ffffff?text=Poster+N/D' 
+            ? 'https://placehold.co/300x450/333333/ffffff?text=Poster+N/D' 
             : filme.Poster;
 
         image.src = posterUrl
@@ -53,7 +53,7 @@ function cardFilme(filmeData){
 //função de buscar o filme está pronta e funcionando.
 async function buscarFilmes(filme){
     let busca = `s=${filme}&plot=full`
-   const url = `https://corsproxy.io/?url=https://www.omdbapi.com/?apikey=e716a445&${busca}`
+   const url = `https://www.omdbapi.com/?apikey=e716a445&${busca}`
 
    const dados = await fetch(url) 
    const response = await dados.json()
