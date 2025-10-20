@@ -17,7 +17,7 @@ function getIdFilmeDaUrl() {
 async function buscarDetalhesDoFilme(id) {
 
     // Busca pela chave 'i' (ID) para obter detalhes do filme
-    const url = `https://corsproxy.io/?url=http://www.omdbapi.com/?apikey=${api_key}&i=${id}&plot=full`
+    const url = `https://corsproxy.io/?url=https://www.omdbapi.com/?apikey=${api_key}&i=${id}&plot=full`
     
     try {
         const dados = await fetch(url)

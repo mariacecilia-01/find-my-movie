@@ -53,7 +53,7 @@ function cardFilme(filmeData){
 //função de buscar o filme está pronta e funcionando.
 async function buscarFilmes(filme){
     let busca = `s=${filme}&plot=full`
-   const url = `https://corsproxy.io/?url=http://www.omdbapi.com/?apikey=e716a445&${busca}`
+   const url = `https://corsproxy.io/?url=https://www.omdbapi.com/?apikey=e716a445&${busca}`
 
    const dados = await fetch(url) 
    const response = await dados.json()
