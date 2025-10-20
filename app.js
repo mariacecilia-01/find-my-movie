@@ -20,7 +20,7 @@ function cardFilme(filmeData){
         const tituloFilme = document.createElement('h2')
 
         const posterUrl = filme.Poster === 'N/A' 
-            ? 'https://placehold.co/300x450/333333/ffffff?text=Poster+N/D' 
+            ? 'https://corsproxy.io/?url=https://placehold.co/300x450/333333/ffffff?text=Poster+N/D' 
             : filme.Poster;
 
         image.src = posterUrl

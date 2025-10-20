@@ -46,7 +46,7 @@ function infoFilmes(filmeData){
     colunaEsquerda.classList.add('coluna-poster')
     
     const image = document.createElement('img')
-    image.src = filmeData.Poster !== 'N/A' ? filmeData.Poster : 'https://placehold.co/300x450/333333/ffffff?text=Poster+N/D'
+    image.src = filmeData.Poster !== 'N/A' ? filmeData.Poster : 'https://corsproxy.io/?url=https://placehold.co/300x450/333333/ffffff?text=Poster+N/D'
     image.alt = `Capa de ${filmeData.Title}`
     colunaEsquerda.appendChild(image)
 
