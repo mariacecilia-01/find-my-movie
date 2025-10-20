@@ -17,7 +17,7 @@ function getIdFilmeDaUrl() {
 async function buscarDetalhesDoFilme(id) {
 
     // Busca pela chave 'i' (ID) para obter detalhes do filme
-    const url = `https://www.omdbapi.com/?apikey=${api_key}&i=${id}&plot=full`
+    const url = `https://corsproxy.io/?url=https://www.omdbapi.com/?apikey=${api_key}&i=${id}&plot=full`
     
     try {
         const dados = await fetch(url)
@@ -46,7 +46,7 @@ function infoFilmes(filmeData){
     colunaEsquerda.classList.add('coluna-poster')
     
     const image = document.createElement('img')
-    image.src = filmeData.Poster !== 'N/A' ? filmeData.Poster : 'https://placehold.co/300x450/333333/ffffff?text=Poster+N/D'
+    image.src = filmeData.Poster !== 'N/A' ? filmeData.Poster : 'https://corsproxy.io/?url=https://placehold.co/300x450/333333/ffffff?text=Poster+N/D'
     image.alt = `Capa de ${filmeData.Title}`
     colunaEsquerda.appendChild(image)
 
@@ -94,7 +94,7 @@ function infoFilmes(filmeData){
     footerDetalhes.appendChild(notaFilmeDiv)
 
     const imdbLink = document.createElement('a')
-    imdbLink.href = `https://www.imdb.com/title/${filmeData.imdbID}`
+    imdbLink.href = `https://corsproxy.io/?url=https://www.imdb.com/title/${filmeData.imdbID}`
     imdbLink.target = '_blank';
     imdbLink.classList.add('imdb-button');
     imdbLink.textContent = 'VER NO IMDB';
